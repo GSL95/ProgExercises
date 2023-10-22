@@ -1,0 +1,27 @@
+numeros = []
+pares = 0
+impares = 0
+positivos = 0
+negativos = 0
+
+for i in range(5):
+    numeros.append(int(input("Digite um valor")))
+
+for j in range(len(numeros)):
+    if numeros[j] % 2 == 0:
+        pares += 1
+    else:
+        impares += 1
+for k in range(len(numeros)):
+    if numeros[k] > 0:
+        positivos += 1
+    elif numeros[k] == 0:
+        negativos = negativos
+    else:
+        negativos += 1
+
+print(pares)
+print(impares)
+print(positivos)
+print(negativos)
+
